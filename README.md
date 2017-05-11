@@ -8,6 +8,13 @@ Location is set in [TZ format](https://www.wikiwand.com/en/List_of_tz_database_t
 
 If skipped, location is set to Etc/GMT.
 
+## Installation
+```
+go get github.com/nezorflame/tuidconv
+cd *YOUR_GOPATH*/src/github.com/nezorflame/tuidconv
+go install
+```
+
 ## Example
 tuidconv a7b6fe0a-2afd-11e7-b9f8-005056864dbf Europe/Moscow
 ```
