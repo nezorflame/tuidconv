@@ -29,3 +29,5 @@ _testmain.go
 # executables
 debug*
 tuidconv*
+
+\.DS_Store
