@@ -37,5 +37,8 @@ func main() {
 		return
 	}
 
-	fmt.Println("time:", time.Unix(tuid.Time().UnixTime()).In(here))
+	sec, nsec := tuid.Time().UnixTime()
+
+	fmt.Println("time:", time.Unix(sec, nsec).In(here))
+	fmt.Println("unix:", sec)
 }
