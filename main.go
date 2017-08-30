@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/gocql/gocql"
+	"github.com/google/uuid"
 )
 
 const defaultLocation = "Etc/GMT"
@@ -31,11 +31,11 @@ func main() {
 		return
 	}
 
-	tuid, err := gocql.ParseUUID(tuidStr)
+	tuid, err := uuid.Parse(tuidStr)
 	if err != nil {
 		fmt.Println("Can't parse timeuuid, please try again")
 		return
 	}
 
-	fmt.Println("time:", tuid.Time().In(here))
+	fmt.Println("time:", time.Unix(tuid.Time().UnixTime()).In(here))
 }
