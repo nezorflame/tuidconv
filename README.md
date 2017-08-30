@@ -1,4 +1,4 @@
-# tuidconv
+# tuidconv [![Build Status](https://travis-ci.org/nezorflame/tuidconv.svg?branch=master)](https://travis-ci.org/nezorflame/tuidconv) [![Go Report Card](https://goreportcard.com/badge/github.com/nezorflame/tuidconv)](https://goreportcard.com/report/github.com/nezorflame/tuidconv)
 
 Small utility for the extraction of datetime from UUID v1 and v2.
 Supports Cassandra's [timeuuid](http://docs.datastax.com/en/cql/3.3/cql/cql_reference/uuid_type_r.html) type (which is essentialy a Type 1 UUID).
