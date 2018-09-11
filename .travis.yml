@@ -1,7 +1,17 @@
+dist: trusty
+sudo: false
 language: go
-
 go:
-  - 1.7.6
-  - 1.8.3
-  - 1.9
-  - master
+  - "1.11"
+  - "tip"
+env:
+  global:
+    - PATH=$PATH:$HOME/gopath/bin
+    - GOLANGCI=v1.10.2
+    - GO111MODULE=on
+install:
+  - go install
+before_script:
+  - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | bash -s -- -b $GOPATH/bin $GOLANGCI
+script:
+  - golangci-lint run --enable goimports

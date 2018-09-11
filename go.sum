@@ -1,0 +1,4 @@
+github.com/google/uuid v1.0.0 h1:b4Gk+7WdP/d3HZH8EJsZpvV7EtDOgaZLtnaNGIu1adA=
+github.com/google/uuid v1.0.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/google/uuid v1.0.1-0.20180828181555-e704694aed0e h1:sogdaggUzugKY5G8mflaq2AzSSGmUPD6Pi6UAZ/ugg0=
+github.com/google/uuid v1.0.1-0.20180828181555-e704694aed0e/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=

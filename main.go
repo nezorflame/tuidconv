@@ -21,24 +21,23 @@ func main() {
 		tuidStr = os.Args[1]
 		locStr = os.Args[2]
 	default:
-		fmt.Println("Incorrect input, please try again")
+		fmt.Println("Incorrect input")
 		return
 	}
 
 	here, err := time.LoadLocation(locStr)
 	if err != nil {
-		fmt.Println("Can't parse location, please try again")
+		fmt.Printf("Unable to parse location: %v\n", err)
 		return
 	}
 
 	tuid, err := uuid.Parse(tuidStr)
 	if err != nil {
-		fmt.Println("Can't parse timeuuid, please try again")
+		fmt.Printf("Unable to parse timeuuid: %v\n", err)
 		return
 	}
 
 	sec, nsec := tuid.Time().UnixTime()
-
 	fmt.Println("time:", time.Unix(sec, nsec).In(here))
 	fmt.Println("unix:", sec)
 }
