@@ -21,7 +21,10 @@ If skipped, location is set to `Etc/GMT`.
 ## Installation
 
 ```bash
-GO111MODULE=on go get -u github.com/nezorflame/tuidconv
+go get -u github.com/nezorflame/tuidconv
+# To use with Go modules, do the next steps as well:
+cd $GOPATH/src/github.com/nezorflame/tuidconv
+GO111MODULE=on go install
 ```
 
 ## Example
